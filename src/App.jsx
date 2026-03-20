@@ -332,7 +332,7 @@ function AboutSection() {
           <SectionTitle>{data.about_series.heading}</SectionTitle>
           <div className="grid-2 text-justify">
             {data.about_series.body.map((para, i) => (
-              <p key={i} style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.1 ,color: "var(--text)",  margin: 0 , textAlign: "justify"}}>{para}</p>
+              <p key={i} style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.4,color: "var(--text)",  margin: 0 , textAlign: "justify"}}>{para}</p>
             ))}
           </div>
         </div>
@@ -345,7 +345,7 @@ function AboutSection() {
           <SectionTitle>{data.about_conf.heading}</SectionTitle>
           <div className="grid-2">
             {data.about_conf.body.map((para, i) => (
-              <p key={i} style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.1,color: "var(--text)", margin: 0 , textAlign: "justify"}}>{para}</p>
+              <p key={i} style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.4,color: "var(--text)", margin: 0 , textAlign: "justify"}}>{para}</p>
             ))}
           </div>
         </div>
