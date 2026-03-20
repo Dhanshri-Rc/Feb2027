@@ -546,7 +546,7 @@ function PublicationSection() {
         <SectionTitle>Publication Opportunities</SectionTitle>
         <div className="grid-2">
           {data.publication.body.map((para, i) => (
-            <p key={i} style={{ fontFamily: "var(--font-body)", fontSize: "1rem", color: "var(--text)", lineHeight: 1.8, margin: 0 }}>{para}</p>
+            <p key={i} style={{ fontFamily: "var(--font-body)", fontSize: "1rem", color: "var(--text)", lineHeight: 1.4, margin: 0 , textAlign: "justify"}}>{para}</p>
           ))}
         </div>
         <div className="pub-tags">
