@@ -219,9 +219,23 @@ function Nav({ activeSection }) {
     <header>
       <nav className="nav">
         <div className="nav__inner">
-          <a href="#" className="nav__brand" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
-            SIARE.Feb 2027
-          </a>
+          {/* <a href="#" className="nav__brand" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
+            WCBESED <br /> Feb 2027
+          </a> */}
+          <a
+  href="#"
+  className="nav__brand"
+  onClick={(e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }}
+>
+  <span className="nav__logo-icon">💰</span>
+  <span className="nav__logo-text">
+    WCBESED
+    <span className="nav__logo-sub">Feb 2027</span>
+  </span>
+</a>
 
           {/* Desktop links */}
           <ul className="nav__links">
@@ -279,9 +293,9 @@ function Hero() {
           <span className="hero__tag-text">{data.hero.seriesTag}</span>
         </div>
         
-        <h1 className="hero__title">{data.hero.title}</h1>
-        <p className="hero__tagline">"{data.hero.tagline}"</p>
-        <div className="hero__meta">
+        <h1 className="hero__title fade-up fade-delay-1">{data.hero.title}</h1>
+        <p className="hero__tagline fade-up fade-delay-2">"{data.hero.tagline}"</p>
+        <div className="hero__meta fade-up fade-delay-3">
           <div className="hero__meta-item">
             <span className="hero__meta-icon" aria-hidden="true">📅</span>
             <span className="hero__meta-text">{data.hero.dates}</span>
@@ -291,7 +305,7 @@ function Hero() {
             <span className="hero__meta-text">{data.hero.venue}</span>
           </div>
         </div>
-        <div className="hero__cta">
+        <div className="hero__cta fade-up fade-delay-4">
           <a href="#submission" className="btn btn--primary"
             onClick={(e) => { e.preventDefault(); document.getElementById("submission")?.scrollIntoView({ behavior: "smooth" }); }}>
             Submit Paper
@@ -306,27 +320,6 @@ function Hero() {
   );
 }
 
-// ─── Stat Bar ─────────────────────────────────────────────────────────────────
-// function StatBar() {
-//   const stats = [
-//     { val: "500+", label: "Expected Delegates" },
-//     { val: "50+",  label: "Countries Represented" },
-//     { val: "10",   label: "Thematic Tracks" },
-//     { val: "40+",  label: "SIARE Global Events" },
-//   ];
-//   return (
-//     <div className="stat-bar" aria-label="Conference statistics">
-//       <div className="stat-bar__inner">
-//         {stats.map(({ val, label }) => (
-//           <div key={label} className="stat-bar__item">
-//             <div className="stat-bar__value">{val}</div>
-//             <div className="stat-bar__label">{label}</div>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
 
 // ─── About ────────────────────────────────────────────────────────────────────
 function AboutSection() {
